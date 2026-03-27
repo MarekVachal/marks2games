@@ -1,4 +1,64 @@
-baseURL = 'http://localhost/'
+baseURL = 'https://marekvachal.github.io/marks2games/'
 languageCode = 'en-us'
 title = 'Marks2Games'
 theme = 'stack'
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/page/about/"
+weight = 10
+
+[[menu.main]]
+identifier = "gravity-game"
+name = "Gravity Game"
+url = "/gravity-game/"
+weight = 20
+
+[[menu.main]]
+identifier = "insect-steampunk"
+name = "Insect Steampunk"
+url = "/insect-steampunk/"
+weight = 30
+
+[[menu.main]]
+identifier = "gladiators"
+name = "Gladiators"
+url = "/gladiators/"
+weight = 40
+
+[[menu.main]]
+identifier = "support"
+name = "Support"
+url = "/page/support/"
+weight = 50
+
+[[menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/page/contact/"
+weight = 60
+
+[[menu.social]]
+identifier = "email"
+name = "Email"
+url = "mailto:tvuj@email.cz"
+weight = 10
+
+[[menu.social]]
+identifier = "discord"
+name = "Discord"
+url = "https://discord.gg/H4hFa3vgvZ"
+weight = 20
+
+[[menu.social]]
+identifier = "facebook"
+name = "Facebook"
+url = "https://www.facebook.com/groups/979557247091776"
+weight = 30
+
+[[menu.social]]
+identifier = "buymeacoffee"
+name = "Buy Me a Coffee"
+url = "https://buymeacoffee.com/gravitygame"
+weight = 40

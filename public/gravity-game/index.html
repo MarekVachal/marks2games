@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/marks2games/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=marks2games/livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="A sci-fi online strategy game for Android.">
+<title>Gravity Game</title>
+
+
+<link rel="canonical" href="http://localhost:1313/marks2games/gravity-game/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+
+<link rel="stylesheet" href="/marks2games/scss/style.min.389e156f5e9bb13df5a924cfa99dfb9c39f3e01e68d9e146cd65bdae963be145.css"><meta property='og:title' content="Gravity Game">
+<meta property='og:description' content="A sci-fi online strategy game for Android.">
+<meta property='og:url' content='http://localhost:1313/marks2games/gravity-game/'>
+<meta property='og:site_name' content='Marks2Games'>
+<meta property='og:type' content='website'>
+<meta name="twitter:title" content="Gravity Game">
+<meta name="twitter:description" content="A sci-fi online strategy game for Android."><link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/marks2games/gravity-game/index.xml">
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/marks2games/">Marks2Games</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='mailto:tvuj@email.cz'
+                        
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://discord.gg/H4hFa3vgvZ'
+                        
+                        title="Discord"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.facebook.com/groups/979557247091776'
+                        
+                        title="Facebook"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://buymeacoffee.com/gravitygame'
+                        
+                        title="Buy Me a Coffee"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/marks2games/page/about/' >
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li  class='current'>
+            <a href='/marks2games/gravity-game/' >
+                
+                <span>Gravity Game</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/insect-steampunk/' >
+                
+                <span>Insect Steampunk</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/gladiators/' >
+                
+                <span>Gladiators</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/page/support/' >
+                
+                <span>Support</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/page/contact/' >
+                
+                <span>Contact</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+            <main class="main full-width">
+<div class="marks2games-section" style="padding: 2rem; max-width: 1100px; margin: 0 auto;">
+
+  <section style="margin-bottom: 3rem;">
+    <p style="text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 0.5rem;">
+      Game
+    </p>
+    <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">Gravity Game</h1>
+    
+      <p style="font-size: 1.25rem; margin-bottom: 1rem;">A sci-fi online strategy game for Android.</p>
+    
+  </section>
+
+<section style="margin-bottom: 3rem;">
+    <h2 style="margin-bottom: 1rem;">Game Guide</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+
+      
+      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+        <h3>Planets</h3>
+        <p>Learn how planets grow, unlock districts, and shape the expansion of your empire.</p>
+        <p><a href="/marks2games/gravity-game/planets/">Learn more</a></p>
+      </div>
+      
+
+      
+      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+        <h3>Districts</h3>
+        <p>Discover the districts that shape each planet and define how it produces, grows, and expands.</p>
+        <p><a href="/marks2games/gravity-game/districts/">Learn more</a></p>
+      </div>
+      
+
+      
+      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+        <h3>Resources</h3>
+        <p>Understand the resources that drive your empire, from biomass and metals to research and expeditions.</p>
+        <p><a href="/marks2games/gravity-game/resources/">Learn more</a></p>
+      </div>
+      
+
+      
+      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+        <h3>Production</h3>
+        <p>See how to configure your planets, set production priorities, build districts, and expand your empire.</p>
+        <p><a href="/marks2games/gravity-game/production/">Learn more</a></p>
+      </div>
+      
+
+      
+      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+        <h3>Technologies</h3>
+        <p>Discover how research unlocks new district modes, logistics, expansion, military production, and empire-wide upgrades.</p>
+        <p><a href="/marks2games/gravity-game/technologies/">Learn more</a></p>
+      </div>
+      
+
+      
+      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+        <h3>Battles</h3>
+        <p>Understand the tactical combat system and battle flow.</p>
+        <p><a href="/marks2games/gravity-game/battles/">Learn more</a></p>
+      </div>
+      
+
+      
+      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+        <h3></h3>
+        
+        <p><a href="/marks2games/gravity-game/faq/">Read</a></p>
+      </div>
+      
+
+    </div>
+  </section>
+
+  <section style="margin-bottom: 3rem; line-height: 1.8;">
+    <h2 id="build-your-empire-among-the-stars">Build your empire among the stars
+</h2><p><strong>Gravity Game</strong> is a sci-fi online strategy game for Android where you build and develop your own interplanetary empire, expand across planets, manage production, and fight strategic battles against other players.</p>
+<p>The long-term vision of the game is to combine two layers of gameplay into one connected experience:</p>
+<ul>
+<li>a <strong>macro layer</strong>, where you grow and manage your empire in real time</li>
+<li>a <strong>battle layer</strong>, where players face each other in tactical combat</li>
+</ul>
+<p>Our goal is to create a strategy game that rewards thoughtful decisions, remains fair to players, and avoids the usual pressure mechanics common in online games.</p>
+<p><a class="link" href="https://play.google.com/store/apps/details?id=com.marks2games.gravitygame"  target="_blank" rel="noopener"
+    >Download on Google Play</a></p>
+<hr>
+<h2 id="what-the-game-is-today">What the game is today
+</h2><p>Gravity Game is currently focused on its <strong>battle gameplay</strong>, which began as a smaller part of a much larger strategy concept and has gradually developed into a standalone experience of its own.</p>
+<p>In battle, players build the structure of their fleet and try to capture the opponent’s base before the opponent captures theirs. Battles are designed as <strong>turn-based tactical encounters</strong> where both players prepare their moves, and after both confirm, the moves are executed simultaneously.</p>
+<p>This creates a distinctive kind of decision-making: success depends not only on what move you choose, but also on when to commit, when to reposition, and when retreat is the better strategy.</p>
+<p>A standard player battle is designed to be a relatively compact experience, typically around <strong>10–15 minutes</strong>, with the possibility of larger and longer formats in the future.</p>
+<hr>
+<h2 id="the-long-term-vision">The long-term vision
+</h2><p>Gravity Game is intended to grow into a broader online strategy game in which battles are only one part of a larger empire-building system.</p>
+<p>Each player begins with a single home planet and gradually expands outward. At first, development is focused on building a stable economic base. As the empire grows, economic expansion becomes more demanding, and military expansion becomes increasingly meaningful.</p>
+<p>The full vision connects empire management and combat into one system:</p>
+<ul>
+<li>your empire influences the conditions of battle</li>
+<li>battle results influence the development of your empire</li>
+<li>expansion is achieved through both planning and conflict</li>
+</ul>
+<p>The goal is not to create a game that constantly pressures players to stay online, but one that invites them to return on their own terms.</p>
+<hr>
+<h2 id="core-design-principles">Core design principles
+</h2><h3 id="strategy-first">Strategy first
+</h3><p>Gravity Game is built as a competitive strategy game. Victory should come from better decisions, better planning, and a better understanding of the situation — not from repetitive chores or artificial power advantages.</p>
+<h3 id="no-pay-to-win">No pay to win
+</h3><p>We do not want Gravity Game to include <strong>pay-to-win mechanics</strong> at any level. Financial support should help development, not buy victory.</p>
+<h3 id="no-forced-daily-routine">No forced daily routine
+</h3><p>The game is being designed without “daily task” systems that force players to log in constantly. We want players to enjoy the game when they choose to, not because the game punishes them for leaving.</p>
+<h3 id="macro--micro-gameplay">Macro + micro gameplay
+</h3><p>The larger vision of Gravity Game is built around two connected layers:</p>
+<ul>
+<li><strong>Macro gameplay</strong> — long-term empire development, planets, economy, growth, and logistics</li>
+<li><strong>Micro gameplay</strong> — direct battles between players in a tactical combat system</li>
+</ul>
+<p>These two layers are meant to support each other rather than exist as separate games.</p>
+<h3 id="meaningful-asymmetry">Meaningful asymmetry
+</h3><p>Planets should not all feel identical. Over time, different conditions, development paths, and strategic situations should make each empire feel more unique and less solvable by a single universal guide.</p>
+<hr>
+<h2 id="game-structure">Game structure
+</h2><h3 id="empire-layer">Empire layer
+</h3><p>In the empire layer, the player starts with a single planet and gradually develops the infrastructure, economy, and research necessary for further expansion.</p>
+<p>The long-term idea is that:</p>
+<ul>
+<li>smaller empires encourage more all-purpose development</li>
+<li>larger empires encourage specialization between planets</li>
+<li>strategy shifts from micromanaging one world to building relationships between many worlds</li>
+</ul>
+<p>This should create a sense of growth where the player’s decision-making evolves together with the scale of the empire.</p>
+<h3 id="battle-layer">Battle layer
+</h3><p>The battle layer is focused on tactical duels between players.</p>
+<p>Battles are planned in turns, but the execution is simultaneous once both players confirm their choices. Different ship types are designed to be useful in different situations, and the player must adapt not only to the battlefield, but also to the intentions of the opponent.</p>
+<p>In the broader design, battles may exist in different modes, including:</p>
+<ul>
+<li>competitive battles connected to empire progression</li>
+<li>friendly battles with equalized starting conditions</li>
+<li>rating-based or freely arranged duels</li>
+</ul>
+<p>Over time, this should allow both meaningful competition and lower-pressure play options.</p>
+<hr>
+<h2 id="what-makes-gravity-game-different">What makes Gravity Game different
+</h2><p>We want Gravity Game to stand apart from many classic online strategy games in several ways:</p>
+<ul>
+<li>a focus on <strong>fair competitive design</strong></li>
+<li>no dependence on <strong>pay-to-win systems</strong></li>
+<li>fewer but more meaningful resources</li>
+<li>less pressure to stay online constantly</li>
+<li>a stronger connection between economy, expansion, and combat</li>
+<li>strategic depth built from interacting systems rather than artificial grind</li>
+</ul>
+<p>Our aim is to make the game engaging not because it controls the player, but because it offers interesting decisions.</p>
+<hr>
+<h2 id="learn-more">Learn more
+</h2><p>To explore the game in more detail, continue to the individual sections:</p>
+<ul>
+<li><a class="link" href="/gravity-game/planets/" >Planets</a></li>
+<li><a class="link" href="/gravity-game/districts/" >Districts</a></li>
+<li><a class="link" href="/gravity-game/resources/" >Resources</a></li>
+<li><a class="link" href="/gravity-game/production/" >Production</a></li>
+<li><a class="link" href="/gravity-game/battles/" >Battles</a></li>
+</ul>
+<p>You can also visit the earlier project website here:</p>
+<p><a class="link" href="https://gravitygame-446320.web.app/"  target="_blank" rel="noopener"
+    >Current Gravity Game website</a></p>
+
+  </section>
+
+  
+
+  <section style="margin-bottom: 3rem;">
+    <h2 style="margin-bottom: 1rem;">Links</h2>
+    <p>
+      <a href="https://gravitygame-446320.web.app/">Current Gravity Game website</a><br>
+      <a href="https://play.google.com/store/apps/details?id=com.marks2games.gravitygame">Download on Google Play</a><br>
+      <a href="https://buymeacoffee.com/gravitygame">Support on Buy Me a Coffee</a>
+    </p>
+  </section>
+
+</div>
+
+            </main>
+        </div>
+        
+<script type="text/javascript" src="/marks2games/ts/main.86d5a341b324a4c057442757362185092f2bb4a34329d294b96300f072a2e008.js" defer></script>
+
+
+    </body>
+</html>

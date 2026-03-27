@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Marks2Games</title>
-        <link>http://localhost:1313/marks2games/</link>
+        <link>http://localhost:1313/marks2games/insect-steampunk/</link>
         <description>Recent content on Marks2Games</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="http://localhost:1313/marks2games/index.xml" rel="self" type="application/rss+xml" /></channel>
+        <language>en-us</language><atom:link href="http://localhost:1313/marks2games/insect-steampunk/index.xml" rel="self" type="application/rss+xml" /></channel>
 </rss>

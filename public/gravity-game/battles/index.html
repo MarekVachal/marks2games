@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/marks2games/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=marks2games/livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Understand the tactical combat system and battle flow.">
+<title>Battles</title>
+
+
+<link rel="canonical" href="http://localhost:1313/marks2games/gravity-game/battles/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+
+<link rel="stylesheet" href="/marks2games/scss/style.min.389e156f5e9bb13df5a924cfa99dfb9c39f3e01e68d9e146cd65bdae963be145.css"><meta property='og:title' content="Battles">
+<meta property='og:description' content="Understand the tactical combat system and battle flow.">
+<meta property='og:url' content='http://localhost:1313/marks2games/gravity-game/battles/'>
+<meta property='og:site_name' content='Marks2Games'>
+<meta property='og:type' content='article'><meta property='article:section' content='Gravity-Game' />
+<meta name="twitter:title" content="Battles">
+<meta name="twitter:description" content="Understand the tactical combat system and battle flow.">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/marks2games/">Marks2Games</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='mailto:tvuj@email.cz'
+                        
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://discord.gg/H4hFa3vgvZ'
+                        
+                        title="Discord"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.facebook.com/groups/979557247091776'
+                        
+                        title="Facebook"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://buymeacoffee.com/gravitygame'
+                        
+                        title="Buy Me a Coffee"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/marks2games/page/about/' >
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/gravity-game/' >
+                
+                <span>Gravity Game</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/insect-steampunk/' >
+                
+                <span>Insect Steampunk</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/gladiators/' >
+                
+                <span>Gladiators</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/page/support/' >
+                
+                <span>Support</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/page/contact/' >
+                
+                <span>Contact</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/marks2games/gravity-game/battles/">Battles</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Understand the tactical combat system and battle flow.
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    <footer class="article-meta">
+        
+            <div class="inline-meta">
+                
+
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                    <time class="article-time--reading">
+                        5 minutes read
+                    </time>
+                
+            </div>
+        
+
+        
+
+        
+    </footer>
+    
+</div>
+
+</header>
+
+    
+
+    <section class="article-content">
+    
+    
+    <h2 id="battles">Battles
+</h2><p>Battles in <strong>Gravity Game</strong> are turn-based tactical encounters between two players. Each match represents a single battle, where both sides move their fleets, meet on contested fields, and fight for control.</p>
+<p>The system is designed around planning, prediction, and risk management. Success depends not only on fleet composition, but also on positioning, timing, and deciding how much loss you are willing to accept.</p>
+<hr>
+<h2 id="battle-structure">Battle structure
+</h2><p>Each round consists of two phases:</p>
+<ol>
+<li><strong>Fleet movement</strong></li>
+<li><strong>Fleet encounters</strong></li>
+</ol>
+<p>During the movement phase, both players reposition their fleets on the battlefield. After both players confirm their moves, all encounters are resolved.</p>
+<p>A full battle ends when one player captures the enemy base.</p>
+<hr>
+<h2 id="units">Units
+</h2><p>Each player controls a fleet of <strong>11 units</strong>. There are four unit types in the game, each with its own role.</p>
+<h3 id="cruiser">Cruiser
+</h3><ul>
+<li><strong>Firepower:</strong> 1</li>
+<li><strong>Shields:</strong> 10</li>
+</ul>
+<p>Cruisers are the basic backbone of a fleet. They provide stable combat value and high durability.</p>
+<h3 id="destroyer">Destroyer
+</h3><ul>
+<li><strong>Firepower:</strong> 2</li>
+<li><strong>Shields:</strong> 10</li>
+<li><strong>Ability:</strong> The total firepower of Destroyers cannot exceed the number of enemy units on the battlefield.</li>
+</ul>
+<p>Destroyers are powerful offensive units, but their effectiveness depends on the size of the opposing fleet. Their strength is limited when facing only a small number of enemies.</p>
+<h3 id="ghost">Ghost
+</h3><ul>
+<li><strong>Firepower:</strong> 1</li>
+<li><strong>Shields:</strong> 5</li>
+<li><strong>Ability:</strong> Each Ghost disables one enemy Destroyer.</li>
+</ul>
+<p>A disabled Destroyer is not destroyed, but it does not participate in combat as long as the Ghost that disables it remains alive. Ghosts are therefore a key counter-unit against Destroyer-heavy fleets.</p>
+<h3 id="warper">Warper
+</h3><ul>
+<li><strong>Firepower:</strong> 2</li>
+<li><strong>Shields:</strong> 1</li>
+<li><strong>Ability:</strong> Can move to any field during the movement phase.</li>
+</ul>
+<p>Warpers are fragile but highly mobile. Their ability to move anywhere makes them useful for surprise attacks, reinforcement, or sudden repositioning.</p>
+<hr>
+<h2 id="movement">Movement
+</h2><p>Units move across the battlefield one field per turn, with one exception: the <strong>Warper</strong> can move to any field during the movement phase.</p>
+<p>Additional movement rules:</p>
+<ul>
+<li>each player has <strong>11 units total</strong></li>
+<li>a maximum of <strong>6 units from one player</strong> can occupy a single field</li>
+<li>this means up to <strong>12 total units</strong> may be present on one field at the same time</li>
+<li>units on a field controlled by the enemy cannot move to another enemy-controlled field</li>
+</ul>
+<p>After both players finish planning their movement, the encounter phase begins.</p>
+<hr>
+<h2 id="fleet-encounters">Fleet encounters
+</h2><p>Whenever units from both players are present on the same field, a <strong>fleet encounter</strong> takes place.</p>
+<p>Encounters are resolved in rounds until one side reaches its limit of acceptable losses.</p>
+<hr>
+<h2 id="maximum-tolerable-losses">Maximum tolerable losses
+</h2><p>Before combat, each player sets a value called <strong>maximum tolerable losses</strong>.</p>
+<p>This represents the number of units that player is willing to lose in the encounter.</p>
+<p>The encounter ends when one player reaches this limit. The player who reaches their tolerable losses loses the encounter.</p>
+<p>This creates one of the most distinctive features of the battle system: players are not only deciding how to fight, but also how much risk they are willing to take.</p>
+<hr>
+<h2 id="fleet-firepower">Fleet firepower
+</h2><p>A fleet’s firepower is the sum of the firepower of all units currently able to fight.</p>
+<p>Firepower is applied against the enemy unit type that is <strong>most numerous</strong> in the enemy fleet.</p>
+<p>If multiple unit types are tied for the highest number, the following targeting priority is used:</p>
+<p><strong>Cruiser &gt; Destroyer &gt; Ghost &gt; Warper</strong></p>
+<p>This means that fleet composition affects not only raw strength, but also which units are likely to take damage first.</p>
+<hr>
+<h2 id="attacks-and-damage">Attacks and damage
+</h2><p>In each combat round, both fleets deal damage equal to their current firepower.</p>
+<p>Damage is subtracted from the shields of the targeted unit type. If a unit loses all of its shields, any remaining damage continues to the next eligible unit according to the targeting priority.</p>
+<p>Destroyed units are removed from the encounter and no longer contribute firepower.</p>
+<p>Because fleet strength changes as units are destroyed, combat power can shift rapidly during an encounter.</p>
+<hr>
+<h2 id="firepower-reduction">Firepower reduction
+</h2><p>As enemy units are destroyed, the total firepower of a fleet may decrease.</p>
+<p>This is especially important for <strong>Destroyers</strong>, because their total firepower cannot exceed the number of enemy units present on the battlefield.</p>
+<p>As a result, removing enemy units is not just a matter of survival — it can directly reduce the opponent’s offensive potential.</p>
+<hr>
+<h2 id="after-the-encounter">After the encounter
+</h2><p>When an encounter ends:</p>
+<ul>
+<li>all surviving units are restored to their maximum shield values</li>
+<li>the winner gains control of the field</li>
+<li>if the encounter ends in a draw, the field remains under the control of its original owner</li>
+</ul>
+<p>This means that each encounter is self-contained in terms of damage, but still has lasting strategic consequences through field control.</p>
+<hr>
+<h2 id="controlled-field-bonus">Controlled field bonus
+</h2><p>A player who controls a field receives a <strong>+1 firepower bonus</strong> in all future encounters fought on that field.</p>
+<p>This makes territorial control important not only for movement and expansion, but also for direct combat effectiveness.</p>
+<hr>
+<h2 id="victory-condition">Victory condition
+</h2><p>Each player begins on their own <strong>base field</strong>.</p>
+<p>If a player loses an encounter on their base and the opponent takes control of that field, the game is over.</p>
+<p>In other words, victory is achieved by breaking through the enemy’s defenses and capturing their base.</p>
+<hr>
+<h2 id="why-battles-are-different">Why battles are different
+</h2><p>The battle system in Gravity Game is not only about raw numbers. It is built around several interacting decisions:</p>
+<ul>
+<li>how to compose your fleet</li>
+<li>where to move and when</li>
+<li>which fields to defend or abandon</li>
+<li>how many losses you are willing to tolerate</li>
+<li>when to push forward and when to retreat</li>
+</ul>
+<p>This creates battles where prediction, positioning, and risk management matter as much as direct force.</p>
+<hr>
+<h2 id="related-sections">Related sections
+</h2><p>To understand how battles fit into the wider game, continue with the other parts of the guide:</p>
+<ul>
+<li><a class="link" href="/gravity-game/planets/" >Planets</a></li>
+<li><a class="link" href="/gravity-game/districts/" >Districts</a></li>
+<li><a class="link" href="/gravity-game/production/" >Production</a></li>
+<li><a class="link" href="/gravity-game/resources/" >Resources</a></li>
+<li><a class="link" href="../technologies/" >Technologies</a></li>
+</ul>
+
+</section>
+
+
+    <footer class="article-meta article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+        <div class="disqus-container">
+    
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Marks2Games
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="4.0.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/marks2games\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
+    
+
+            </main>
+        </div>
+        
+<script type="text/javascript" src="/marks2games/ts/main.86d5a341b324a4c057442757362185092f2bb4a34329d294b96300f072a2e008.js" defer></script>
+
+
+    </body>
+</html>

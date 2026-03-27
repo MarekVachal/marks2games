@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/marks2games/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=marks2games/livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="See how to configure your planets, set production priorities, build districts, and expand your empire.">
+<title>Production</title>
+
+
+<link rel="canonical" href="http://localhost:1313/marks2games/gravity-game/production/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+
+<link rel="stylesheet" href="/marks2games/scss/style.min.389e156f5e9bb13df5a924cfa99dfb9c39f3e01e68d9e146cd65bdae963be145.css"><meta property='og:title' content="Production">
+<meta property='og:description' content="See how to configure your planets, set production priorities, build districts, and expand your empire.">
+<meta property='og:url' content='http://localhost:1313/marks2games/gravity-game/production/'>
+<meta property='og:site_name' content='Marks2Games'>
+<meta property='og:type' content='article'><meta property='article:section' content='Gravity-Game' />
+<meta name="twitter:title" content="Production">
+<meta name="twitter:description" content="See how to configure your planets, set production priorities, build districts, and expand your empire.">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/marks2games/">Marks2Games</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='mailto:tvuj@email.cz'
+                        
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://discord.gg/H4hFa3vgvZ'
+                        
+                        title="Discord"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.facebook.com/groups/979557247091776'
+                        
+                        title="Facebook"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://buymeacoffee.com/gravitygame'
+                        
+                        title="Buy Me a Coffee"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/marks2games/page/about/' >
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/gravity-game/' >
+                
+                <span>Gravity Game</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/insect-steampunk/' >
+                
+                <span>Insect Steampunk</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/gladiators/' >
+                
+                <span>Gladiators</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/page/support/' >
+                
+                <span>Support</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/marks2games/page/contact/' >
+                
+                <span>Contact</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/marks2games/gravity-game/production/">Production</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            See how to configure your planets, set production priorities, build districts, and expand your empire.
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    <footer class="article-meta">
+        
+            <div class="inline-meta">
+                
+
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                    <time class="article-time--reading">
+                        3 minutes read
+                    </time>
+                
+            </div>
+        
+
+        
+
+        
+    </footer>
+    
+</div>
+
+</header>
+
+    
+
+    <section class="article-content">
+    
+    
+    <h2 id="production">Production
+</h2><p>Production in <strong>Gravity Game</strong> is not only about what a planet can make, but also about what the player chooses to prioritize.</p>
+<p>The empire rules define several player actions that let you configure how a planet uses its districts and resources. In practice, this means production is a management layer where you decide whether a planet should focus on growth, infrastructure, rocket materials, research, expansion, or war preparation.</p>
+<hr>
+<h2 id="progress-production">Progress production
+</h2><p>Progress is configured in the <strong>Capitol</strong>.</p>
+<p>By setting Progress production, you decide how much of the planet’s Infrastructure and Biomass will be converted into Progress. Progress drives planetary growth and district unlocking, but larger planets also consume it for maintenance. The default value is 0.</p>
+<hr>
+<h2 id="infrastructure-production">Infrastructure production
+</h2><p>Infrastructure is configured in <strong>Industrials</strong> and has three global production settings for the planet:</p>
+<h3 id="nothing">Nothing
+</h3><p>Industrials in Infrastructure mode produce nothing. Only the Capitol provides Infrastructure.</p>
+<h3 id="usage">Usage
+</h3><p>Industrials produce only the amount of Infrastructure needed for:</p>
+<ul>
+<li>planetary maintenance</li>
+<li>the configured Progress target</li>
+<li>district mode changes</li>
+<li>district construction</li>
+</ul>
+<p>This calculation includes Capitol production, but does not include Development output.</p>
+<h3 id="maximum">Maximum
+</h3><p>Industrials produce as much Infrastructure as possible.</p>
+<p>The default setting is <strong>Maximum</strong>.</p>
+<hr>
+<h2 id="rocket-materials-production">Rocket Materials production
+</h2><p>Rocket Materials are also configured in <strong>Industrials</strong> and have three settings:</p>
+<h3 id="nothing-1">Nothing
+</h3><p>Industrials in Rocket Materials mode produce nothing.</p>
+<h3 id="usage-1">Usage
+</h3><p>Industrials produce only the amount of Rocket Materials needed for the configured Warship Materials and Expeditions targets.</p>
+<h3 id="maximum-1">Maximum
+</h3><p>Industrials produce as much Rocket Material as possible.</p>
+<p>The default setting is <strong>Maximum</strong>.</p>
+<hr>
+<h2 id="research-production">Research production
+</h2><p>Research is configured in <strong>Urban Centers</strong>.</p>
+<p>It is added to the empire-wide research pool rather than stored only on the current planet. The default value is 0.</p>
+<hr>
+<h2 id="warship-materials-production">Warship Materials production
+</h2><p>Warship Materials are configured in the <strong>Expedition Platform</strong>.</p>
+<p>The default value is 0. Once enough points are accumulated, a planet can produce a warship. The rules specify that each planet can manage one ship, Warper can exist on only one planet, and the other ship classes can be built up to a total of 10. Built ships also consume Influence for maintenance.</p>
+<hr>
+<h2 id="expeditions-production">Expeditions production
+</h2><p>Expeditions are also configured in the <strong>Expedition Platform</strong>.</p>
+<p>Expedition points are added to the empire-wide bank. The default value is 0. Once the empire reaches the required threshold, it gains a new planet. The cost scales with the number of planets already owned.</p>
+<hr>
+<h2 id="building-districts">Building districts
+</h2><p>On an Empty District, the player can build any district except Capitol.</p>
+<p>Construction starts immediately and consumes available Infrastructure automatically. Once the construction project reaches <strong>50 Infrastructure</strong>, the new district is complete.</p>
+<hr>
+<h2 id="destroying-districts">Destroying districts
+</h2><p>Any district except Capitol can be destroyed.</p>
+<p>Destroying a district gives the player <strong>50 Metals</strong>, and on the next turn the slot becomes an Empty District.</p>
+<hr>
+<h2 id="transport">Transport
+</h2><p>Transport requires:</p>
+<ul>
+<li>the <strong>Transport</strong> technology</li>
+<li>an <strong>Expedition Platform</strong></li>
+</ul>
+<p>It allows resources to be moved between planets. Transport consumes Organic Sediments, and the return leg requires an Expedition Platform on the target planet as well.</p>
+<hr>
+<h2 id="technology-and-production-growth">Technology and production growth
+</h2><p>Production becomes more flexible over time through research.</p>
+<p>Key technologies unlock:</p>
+<ul>
+<li>Organic Sediment mining</li>
+<li>Rocket Materials production</li>
+<li>Metals-from-sediments conversion</li>
+<li>Expedition Platforms</li>
+<li>Transport</li>
+<li>Influence generation</li>
+<li>Trade</li>
+<li>ship production</li>
+<li>district synergies</li>
+<li>repeatable empire-wide upgrades like Cybernetics, Terraform, Diversity, and Gravity Manipulation</li>
+</ul>
+<p>The technology diagram on the last page of the rules also makes clear that production systems are layered: early research opens new basic modes, while later research strengthens efficiency, synergy, and long-term expansion.</p>
+<hr>
+<h2 id="related-sections">Related sections
+</h2><ul>
+<li><a class="link" href="../planets/" >Planets</a></li>
+<li><a class="link" href="../resources/" >Resources</a></li>
+<li><a class="link" href="../districts/" >Districts</a></li>
+<li><a class="link" href="../technologies/" >Technologies</a></li>
+<li><a class="link" href="../battles/" >Battles</a></li>
+</ul>
+
+</section>
+
+
+    <footer class="article-meta article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+        <div class="disqus-container">
+    
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Marks2Games
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="4.0.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/marks2games\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
+    
+
+            </main>
+        </div>
+        
+<script type="text/javascript" src="/marks2games/ts/main.86d5a341b324a4c057442757362185092f2bb4a34329d294b96300f072a2e008.js" defer></script>
+
+
+    </body>
+</html>
