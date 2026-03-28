@@ -6,15 +6,17 @@
   </url><url>
     <loc>http://localhost:1313/marks2games/gravity-game/faq/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/insect-steampunk/</loc>
-  </url><url>
     <loc>http://localhost:1313/marks2games/page/privacy-policy/</loc>
   </url><url>
     <loc>http://localhost:1313/marks2games/page/terms-of-service/</loc>
   </url><url>
     <loc>http://localhost:1313/marks2games/page/about/</loc>
   </url><url>
+    <loc>http://localhost:1313/marks2games/insect-steampunk/archetypes/</loc>
+  </url><url>
     <loc>http://localhost:1313/marks2games/gravity-game/battles/</loc>
+  </url><url>
+    <loc>http://localhost:1313/marks2games/insect-steampunk/bestiary/</loc>
   </url><url>
     <loc>http://localhost:1313/marks2games/categories/</loc>
   </url><url>
@@ -23,6 +25,10 @@
     <loc>http://localhost:1313/marks2games/gravity-game/districts/</loc>
   </url><url>
     <loc>http://localhost:1313/marks2games/gravity-game/</loc>
+  </url><url>
+    <loc>http://localhost:1313/marks2games/insect-steampunk/</loc>
+  </url><url>
+    <loc>http://localhost:1313/marks2games/insect-steampunk/maps/</loc>
   </url><url>
     <loc>http://localhost:1313/marks2games/</loc>
   </url><url>
@@ -33,6 +39,8 @@
     <loc>http://localhost:1313/marks2games/gravity-game/production/</loc>
   </url><url>
     <loc>http://localhost:1313/marks2games/gravity-game/resources/</loc>
+  </url><url>
+    <loc>http://localhost:1313/marks2games/insect-steampunk/rules/</loc>
   </url><url>
     <loc>http://localhost:1313/marks2games/page/support/</loc>
   </url><url>
