@@ -10,7 +10,7 @@ description: "A competitive card-based board game built around pacts, betrayal, 
 What began as an experiment to test one key multiplayer mechanic gradually proved strong enough to become a game of its own.
 
 At the heart of Gladiators is a simple but powerful tension:
-**Who will you support, who will you betray, and when is the right moment to fight?**
+**Who will you support, who will you betray, and who is the right to fight?**
 
 ---
 
@@ -41,15 +41,15 @@ Gladiators is a **competitive card-based board game** for multiple players, buil
 Players balance three combat disciplines:
 - **Archery**
 - **Spear**
-- **Riding**
+- **Cavalry**
 
-Throughout the game, they form pacts, challenge opponents, play maneuver cards, and gradually adapt their character build in response to victories and defeats. :contentReference[oaicite:1]{index=1}
+Throughout the game, they form pacts, challenge opponents, play maneuver cards, and gradually adapt their character build in response to victories and defeats.
 
 ---
 
 ## What makes Gladiators different?
 
-Gladiators is not just about combat strength.  
+Gladiators is not just about combat strength.
 Its core tension comes from the layer **before** the duel even begins.
 
 The game is built around decisions such as:
@@ -72,7 +72,7 @@ The duel system then turns those decisions into direct confrontation.
 
 Each round, players secretly assign pact cards, empty pacts, or duel cards to opponents.
 
-Some pacts are mutually successful and grant bonuses. Others fail, create mistrust, or lead directly to betrayal and conflict. :contentReference[oaicite:2]{index=2}
+Some pacts are mutually successful and grant bonuses. Others fail, create mistrust, or lead directly to betrayal and conflict.
 
 ### Duel system
 
@@ -82,17 +82,17 @@ Each duel is resolved using:
 - chosen combat skills
 - card modifiers
 - pact bonuses
-- betrayal penalties :contentReference[oaicite:3]{index=3}
+- betrayal penalties
 
 ### Character adaptation
 
 After losing a duel, a player may adjust their skill distribution.
 
-This means the game is not static. Players gradually adapt to what is happening at the table and can reshape their build over time. :contentReference[oaicite:4]{index=4}
+This means the game is not static. Players gradually adapt to what is happening at the table and can reshape their build over time.
 
 ### Victory through repeated success
 
-Players gain victory points by winning duels. The first player to reach the required number of victory points wins the game. :contentReference[oaicite:5]{index=5}
+Players gain victory points by winning duels. The first player to reach the required number of victory points wins the game.
 
 ---
 
