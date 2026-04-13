@@ -118,7 +118,7 @@ The tech tree also contains technologies that do not simply unlock new mechanics
 These upgrades suggest that the game is designed around **interaction between systems**, not just isolated production numbers.
 
 ### Prospector Synergy
-Improves Prospector performance based on neighboring Empty Districts.
+Improves Prospector performance based on neighboring Wilderness.
 
 ### Industrial Synergy
 Improves Industrial output based on neighboring Prospectors.
@@ -127,7 +127,7 @@ Improves Industrial output based on neighboring Prospectors.
 Improves Expedition and Warship Materials output based on neighboring Industrials.
 
 ### Urban Center Synergy
-Improves Research and Influence production based on neighboring Empty Districts.
+Improves Research and Influence production based on neighboring Wilderness.
 
 ### Diversity
 Improves district production depending on the number of different district types on the planet. Capitol is excluded from this count.

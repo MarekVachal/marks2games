@@ -1,0 +1,26 @@
+<div class="m2g-card m2g-info-card">
+
+  {{ with .Get "title" }}
+    <h3 class="m2g-info-title">{{ . }}</h3>
+  {{ end }}
+
+  {{ with .Get "subtitle" }}
+    <p class="m2g-info-subtitle"><strong>{{ . }}</strong></p>
+  {{ end }}
+
+  <div class="m2g-info-body">
+    {{ with .Get "image" }}
+      <div class="m2g-info-icon-wrap">
+        <img
+          class="m2g-info-icon"
+          src="{{ . | relURL }}"
+          alt="{{ $.Get "title" }}">
+      </div>
+    {{ end }}
+
+    <div class="m2g-info-text m2g-prose">
+      {{ .Inner | markdownify }}
+    </div>
+  </div>
+
+</div>

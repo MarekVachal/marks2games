@@ -4,10 +4,6 @@
   <url>
     <loc>http://localhost:1313/marks2games/gravity-game/faq/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/page/privacy-policy/</loc>
-  </url><url>
-    <loc>http://localhost:1313/marks2games/page/terms-of-service/</loc>
-  </url><url>
     <loc>http://localhost:1313/marks2games/page/about/</loc>
   </url><url>
     <loc>http://localhost:1313/marks2games/insect-steampunk/archetypes/</loc>
@@ -36,6 +32,8 @@
   </url><url>
     <loc>http://localhost:1313/marks2games/gravity-game/planets/</loc>
   </url><url>
+    <loc>http://localhost:1313/marks2games/page/privacy-policy/</loc>
+  </url><url>
     <loc>http://localhost:1313/marks2games/gravity-game/production/</loc>
   </url><url>
     <loc>http://localhost:1313/marks2games/gravity-game/resources/</loc>
@@ -49,5 +47,7 @@
     <loc>http://localhost:1313/marks2games/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/marks2games/gravity-game/technologies/</loc>
+  </url><url>
+    <loc>http://localhost:1313/marks2games/page/terms-of-service/</loc>
   </url>
 </urlset>

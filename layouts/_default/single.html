@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="m2g-wrap">
+
+  <section class="m2g-hero">
+    <div class="m2g-eyebrow">
+      {{ if .Section }}{{ .Section | humanize }}{{ else }}Page{{ end }}
+    </div>
+    <h1 class="m2g-title">{{ .Title }}</h1>
+    {{ with .Description }}
+      <p class="m2g-subtitle">{{ . }}</p>
+    {{ end }}
+  </section>
+
+  <section class="m2g-section m2g-prose">
+    {{ .Content }}
+  </section>
+
+</div>
+{{ end }}

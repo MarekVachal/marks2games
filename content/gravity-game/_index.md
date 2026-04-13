@@ -129,7 +129,3 @@ To explore the game in more detail, continue to the individual sections:
 - [Resources](/gravity-game/resources/)
 - [Production](/gravity-game/production/)
 - [Battles](/gravity-game/battles/)
-
-You can also visit the earlier project website here:
-
-[Current Gravity Game website](https://gravitygame-446320.web.app/)

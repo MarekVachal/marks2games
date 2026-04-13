@@ -85,7 +85,7 @@ Expedition points are added to the empire-wide bank. The default value is 0. Onc
 
 ## Building districts
 
-On an Empty District, the player can build any district except Capitol.
+On a Wilderness, the player can build any district except Capitol.
 
 Construction starts immediately and consumes available Infrastructure automatically. Once the construction project reaches **50 Infrastructure**, the new district is complete.
 
@@ -95,7 +95,7 @@ Construction starts immediately and consumes available Infrastructure automatica
 
 Any district except Capitol can be destroyed.
 
-Destroying a district gives the player **50 Metals**, and on the next turn the slot becomes an Empty District.
+Destroying a district gives the player **50 Metals**, and on the next turn the slot becomes a Wilderness.
 
 ---
 

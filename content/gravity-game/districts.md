@@ -9,9 +9,12 @@ Districts are the core building blocks of each planet. They determine what the p
 
 Some districts are fixed, some are optional, and several can switch between multiple production modes. Changing a district’s mode costs Infrastructure and causes that district to produce nothing during the current turn.
 
----
+<div class="m2g-info-grid">
 
-## Capitol
+{{< m2g-card
+  image="images/gravity-game/districts/capitol.png"
+  title="Capitol"
+>}}
 
 Every planet has exactly one **Capitol**. It cannot be built or destroyed.
 
@@ -22,17 +25,25 @@ The Capitol:
 
 The Capitol is also central to planetary growth, because Progress is what unlocks additional district slots.
 
----
+{{< /m2g-card >}}
 
-## Empty District
 
-An **Empty District** increases biomass capacity by 100.
+{{< m2g-card
+  image="images/gravity-game/districts/wilderness.png"
+  title="Wilderness"
+>}}
 
-At first glance it may seem inactive, but empty districts also matter indirectly because several synergies depend on neighboring empty districts.
+An **Wilderness** increases biomass capacity by 100.
 
----
+At first glance it may seem inactive, but wilderness also matter indirectly because several synergies depend on neighboring wilderness.
 
-## Prospectors
+{{< /m2g-card >}}
+
+
+{{< m2g-card
+  image="images/gravity-game/districts/prospectors.png"
+  title="Prospectors"
+>}}
 
 **Prospectors** expand the storage capacity of extracted metals and organic sediments by 100.
 
@@ -42,9 +53,13 @@ They have two modes:
 
 Mode 2 is locked behind research.
 
----
+{{< /m2g-card >}}
 
-## Industrials
+
+{{< m2g-card
+  image="images/gravity-game/districts/industrials.png"
+  title="Industrials"
+>}}
 
 **Industrials** increase Rocket Materials storage capacity by 100.
 
@@ -55,9 +70,13 @@ They have three modes:
 
 Modes 2 and 3 are locked behind research.
 
----
+{{< /m2g-card >}}
 
-## Urban Center
+
+{{< m2g-card
+  image="images/gravity-game/districts/urban.png"
+  title="Urban center"
+>}}
 
 **Urban Centers** have two modes:
 - **Mode 1:** convert 10 Biomass into 10 Research
@@ -65,9 +84,13 @@ Modes 2 and 3 are locked behind research.
 
 Mode 2 is unlocked by research. This makes Urban Centers the key district for either technological growth or political/military support.
 
----
+{{< /m2g-card >}}
 
-## Expedition Platform
+
+{{< m2g-card
+  image="images/gravity-game/districts/expedition-platform.png"
+  title="Expedition platform"
+>}}
 
 Each planet can have at most one **Expedition Platform**.
 
@@ -80,9 +103,13 @@ Transport costs organic sediments. An Expedition Platform can send **10X** of an
 
 The same district can also perform one of two production actions:
 - convert 10 Rocket Materials into 10 Warship Materials
-- convert 10 Rocket Materials into 10 colonization ship points
+- convert 10 Rocket Materials into 10 Expeditions
 
-At 100 Warship Materials, a planet can construct one ship. At sufficient empire-wide colonization points, the empire gains a new planet.
+At 100 Warship Materials, a planet can construct one ship. At sufficient empire-wide expeditions points, the empire gains a new planet.
+
+{{< /m2g-card >}}
+
+</div>
 
 ---
 

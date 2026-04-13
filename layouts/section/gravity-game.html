@@ -1,94 +1,85 @@
 {{ define "main" }}
-<div class="marks2games-section" style="padding: 2rem; max-width: 1100px; margin: 0 auto;">
+<div class="m2g-wrap">
 
-  <section style="margin-bottom: 3rem;">
-    <p style="text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 0.5rem;">
-      Game
-    </p>
-    <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">{{ .Title }}</h1>
+  <section class="m2g-hero">
+    <div class="m2g-eyebrow">Android Strategy Game</div>
+    <h1 class="m2g-title">{{ .Title }}</h1>
     {{ with .Description }}
-      <p style="font-size: 1.25rem; margin-bottom: 1rem;">{{ . }}</p>
+      <p class="m2g-subtitle">{{ . }}</p>
     {{ end }}
+
+    <div class="m2g-actions">
+      <a class="m2g-button m2g-button-primary" href="https://play.google.com/store/apps/details?id=com.marks2games.gravitygame">Get it on Google Play</a>
+      <a class="m2g-button" href="https://buymeacoffee.com/gravitygame">Support</a>
+    </div>
+
+    <div class="m2g-hero-media">
+        <img
+          class="m2g-card-image"
+          src="{{ "images/gravity-game/feature-screen.png" | relURL }}"
+          alt="Gravity Game key art">
+      </div>
+
   </section>
 
-<section style="margin-bottom: 3rem;">
-    <h2 style="margin-bottom: 1rem;">Game Guide</h2>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
-
+  <section class="m2g-section">
+    <h2 class="m2g-section-title">Game Guide</h2>
+    <div class="m2g-grid m2g-grid-3-small">
       {{ with .GetPage "planets.md" }}
-      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+      <div class="m2g-card">
         <h3>{{ .Title }}</h3>
         {{ with .Description }}<p>{{ . }}</p>{{ end }}
-        <p><a href="{{ .RelPermalink }}">Learn more</a></p>
-      </div>
-      {{ end }}
-
-      {{ with .GetPage "districts.md" }}
-      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
-        <h3>{{ .Title }}</h3>
-        {{ with .Description }}<p>{{ . }}</p>{{ end }}
-        <p><a href="{{ .RelPermalink }}">Learn more</a></p>
+        <div class="m2g-card-links"><a href="{{ .RelPermalink }}">Read more</a></div>
       </div>
       {{ end }}
 
       {{ with .GetPage "resources.md" }}
-      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+      <div class="m2g-card">
         <h3>{{ .Title }}</h3>
         {{ with .Description }}<p>{{ . }}</p>{{ end }}
-        <p><a href="{{ .RelPermalink }}">Learn more</a></p>
+        <div class="m2g-card-links"><a href="{{ .RelPermalink }}">Read more</a></div>
+      </div>
+      {{ end }}
+
+      {{ with .GetPage "districts.md" }}
+      <div class="m2g-card">
+        <h3>{{ .Title }}</h3>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        <div class="m2g-card-links"><a href="{{ .RelPermalink }}">Read more</a></div>
       </div>
       {{ end }}
 
       {{ with .GetPage "production.md" }}
-      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+      <div class="m2g-card">
         <h3>{{ .Title }}</h3>
         {{ with .Description }}<p>{{ . }}</p>{{ end }}
-        <p><a href="{{ .RelPermalink }}">Learn more</a></p>
+        <div class="m2g-card-links"><a href="{{ .RelPermalink }}">Read more</a></div>
       </div>
       {{ end }}
 
       {{ with .GetPage "technologies.md" }}
-      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+      <div class="m2g-card">
         <h3>{{ .Title }}</h3>
         {{ with .Description }}<p>{{ . }}</p>{{ end }}
-        <p><a href="{{ .RelPermalink }}">Learn more</a></p>
+        <div class="m2g-card-links"><a href="{{ .RelPermalink }}">Read more</a></div>
       </div>
       {{ end }}
 
       {{ with .GetPage "battles.md" }}
-      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+      <div class="m2g-card">
         <h3>{{ .Title }}</h3>
         {{ with .Description }}<p>{{ . }}</p>{{ end }}
-        <p><a href="{{ .RelPermalink }}">Learn more</a></p>
+        <div class="m2g-card-links"><a href="{{ .RelPermalink }}">Read more</a></div>
       </div>
       {{ end }}
-
-      {{ with .GetPage "faq.md" }}
-      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
-        <h3>{{ .Title }}</h3>
-        {{ with .Description }}<p>{{ . }}</p>{{ end }}
-        <p><a href="{{ .RelPermalink }}">Read</a></p>
-      </div>
-      {{ end }}
-
     </div>
   </section>
 
-  <section style="margin-bottom: 3rem; line-height: 1.8;">
+  <section class="m2g-section m2g-prose">
     {{ .Content }}
   </section>
 
   
-
-  <section style="margin-bottom: 3rem;">
-    <h2 style="margin-bottom: 1rem;">Links</h2>
-    <p>
-      <a href="https://gravitygame-446320.web.app/">Current Gravity Game website</a><br>
-      <a href="https://play.google.com/store/apps/details?id=com.marks2games.gravitygame">Download on Google Play</a><br>
-      <a href="https://buymeacoffee.com/gravitygame">Support on Buy Me a Coffee</a>
-    </p>
-  </section>
 
 </div>
 {{ end }}

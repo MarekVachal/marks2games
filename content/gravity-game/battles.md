@@ -28,32 +28,63 @@ A full battle ends when one player captures the enemy base.
 
 Each player controls a fleet of **11 units**. There are four unit types in the game, each with its own role.
 
-### Cruiser
+<div class="m2g-info-grid">
+
+{{< m2g-card
+  image="images/gravity-game/ships/cruiser.png"
+  title="Cruiser"
+>}}
+
 - **Firepower:** 1
 - **Shields:** 10
 
 Cruisers are the basic backbone of a fleet. They provide stable combat value and high durability.
 
-### Destroyer
+{{< /m2g-card >}}
+
+
+{{< m2g-card
+  image="images/gravity-game/ships/destroyer.png"
+  title="Destroyer"
+>}}
+
 - **Firepower:** 2
 - **Shields:** 10
 - **Ability:** The total firepower of Destroyers cannot exceed the number of enemy units on the battlefield.
 
 Destroyers are powerful offensive units, but their effectiveness depends on the size of the opposing fleet. Their strength is limited when facing only a small number of enemies.
 
-### Ghost
+{{< /m2g-card >}}
+
+
+{{< m2g-card
+  image="images/gravity-game/ships/ghost.png"
+  title="Ghost"
+>}}
+
 - **Firepower:** 1
 - **Shields:** 5
 - **Ability:** Each Ghost disables one enemy Destroyer.
 
 A disabled Destroyer is not destroyed, but it does not participate in combat as long as the Ghost that disables it remains alive. Ghosts are therefore a key counter-unit against Destroyer-heavy fleets.
 
-### Warper
+{{< /m2g-card >}}
+
+
+{{< m2g-card
+  image="images/gravity-game/ships/warper.png"
+  title="Warper"
+>}}
+
 - **Firepower:** 2
 - **Shields:** 1
 - **Ability:** Can move to any field during the movement phase.
 
 Warpers are fragile but highly mobile. Their ability to move anywhere makes them useful for surprise attacks, reinforcement, or sudden repositioning.
+
+{{< /m2g-card >}}
+
+</div>
 
 ---
 
@@ -176,8 +207,8 @@ This creates battles where prediction, positioning, and risk management matter a
 
 To understand how battles fit into the wider game, continue with the other parts of the guide:
 
-- [Planets](/gravity-game/planets/)
-- [Districts](/gravity-game/districts/)
-- [Production](/gravity-game/production/)
-- [Resources](/gravity-game/resources/)
+- [Planets](../planets/)
+- [Districts](../districts/)
+- [Production](../production/)
+- [Resources](../resources/)
 - [Technologies](../technologies/)

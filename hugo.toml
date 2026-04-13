@@ -44,21 +44,25 @@ identifier = "email"
 name = "Email"
 url = "mailto:tvuj@email.cz"
 weight = 10
+params.icon = "mail"
 
 [[menu.social]]
 identifier = "discord"
 name = "Discord"
 url = "https://discord.gg/H4hFa3vgvZ"
 weight = 20
+params.icon = "brand-discord"
 
 [[menu.social]]
 identifier = "facebook"
 name = "Facebook"
 url = "https://www.facebook.com/groups/979557247091776"
 weight = 30
+params.icon = "brand-facebook"
 
 [[menu.social]]
 identifier = "buymeacoffee"
 name = "Buy Me a Coffee"
 url = "https://buymeacoffee.com/gravitygame"
 weight = 40
+params.icon = "coffee"

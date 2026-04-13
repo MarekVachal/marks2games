@@ -1,101 +1,111 @@
 {{ define "main" }}
-<div class="marks2games-home" style="padding: 2rem; max-width: 1100px; margin: 0 auto;">
+<div class="m2g-wrap">
 
-  <section style="margin-bottom: 3rem;">
-    <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">{{ .Title }}</h1>
-    <p style="font-size: 1.3rem; margin-bottom: 1rem;">
-      {{ .Params.heroSubtitle }}
-    </p>
-    <p style="max-width: 800px; line-height: 1.7;">
-      {{ .Params.intro }}
-    </p>
-    <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-      <a href="{{ "gravity-game/" | relURL }}" style="padding: 0.8rem 1.2rem; border: 1px solid #888; text-decoration: none; border-radius: 8px;">
-        Explore our games
-      </a>
-      <a href="{{ "page/support/" | relURL }}" style="padding: 0.8rem 1.2rem; border: 1px solid #888; text-decoration: none; border-radius: 8px;">
-        Support development
-      </a>
+  <section class="m2g-hero">
+    <div class="m2g-eyebrow">Independent Game Studio</div>
+    <h1 class="m2g-title">{{ .Title }}</h1>
+    <p class="m2g-subtitle">{{ .Params.intro }}</p>
+
+    <div class="m2g-actions">
+      <a class="m2g-button m2g-button-primary" href="{{ "gravity-game/" | relURL }}">Explore our games</a>
+      <a class="m2g-button" href="{{ "page/support/" | relURL }}">Support development</a>
     </div>
   </section>
 
-  <section style="margin-bottom: 3rem;">
-    <h2 style="margin-bottom: 1rem;">Our Projects</h2>
+  <section class="m2g-section">
+    <h2 class="m2g-section-title">Our Projects</h2>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+    <div class="m2g-grid m2g-grid-3">
+      <div class="m2g-card">
+  <img
+    class="m2g-hero-image"
+    src="{{ "images/gravity-game/feature-screen.png" | relURL }}"
+    alt="Gravity Game feature image"
+    style="margin-bottom: 1rem;">
 
-      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
-        <h3>Gravity Game</h3>
-        <p><strong>Sci-fi online strategy for Android</strong></p>
-        <p>
-          Build your planetary empire, expand your districts, manage production,
-          and fight strategic battles against other players.
-        </p>
-        <p>
-          <a href="{{ "gravity-game/" | relURL }}">Game page</a><br>
-          <a href="https://gravitygame-446320.web.app/">Current game website</a><br>
-          <a href="https://play.google.com/store/apps/details?id=com.marks2games.gravitygame">Google Play</a>
-        </p>
-      </div>
+  <h2>Gravity Game</h2>
+  <p><strong>Sci-fi online strategy for Android</strong></p>
+  <p>
+    Build your planetary empire, expand your districts, manage production,
+    and fight strategic battles against other players.
+  </p>
+  <div class="m2g-card-links">
+    <a href="{{ "gravity-game/" | relURL }}">Game page</a>
+  </div>
+</div>
 
-      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
-        <h3>Insect Steampunk</h3>
+      <div class="m2g-card">
+        <img
+            class="m2g-hero-image"
+            src="{{ "images/insect-steampunk/homepage-image.png" | relURL }}"
+            alt="Insect Steampunk cover"
+            style="margin-bottom: 1rem; object-fit: cover; max-height: 280px;">
+
+        <h2>Insect Steampunk</h2>
         <p><strong>A pen-and-paper RPG world in development</strong></p>
         <p>
-          A tabletop roleplaying game blending insects, technology, strange societies,
-          and steampunk-inspired worldbuilding.
+          A tabletop RPG project built around strange societies, unusual worldbuilding,
+          and a setting beyond familiar fantasy patterns.
         </p>
-        <p>
+        <div class="m2g-card-links">
           <a href="{{ "insect-steampunk/" | relURL }}">Learn more</a>
-        </p>
+        </div>
       </div>
 
-      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
-        <h3>Gladiators</h3>
-        <p><strong>A modern card-based board game</strong></p>
+      <div class="m2g-card">
+
+        <img
+            class="m2g-hero-image"
+            src="{{ "images/gladiators/feature-screen.png" | relURL }}"
+            alt="Gladiators feature image"
+            style="margin-bottom: 1rem;">
+
+        <h2>Gladiators</h2>
+        <p><strong>A competitive tabletop game of pacts and duels</strong></p>
         <p>
-          A competitive tabletop game currently in development,
-          with a future Kickstarter campaign planned.
+          A multiplayer board game focused on negotiation, betrayal,
+          maneuver cards, and tactical one-on-one conflicts.
         </p>
-        <p>
+        <div class="m2g-card-links">
           <a href="{{ "gladiators/" | relURL }}">Learn more</a>
-        </p>
+        </div>
       </div>
-
     </div>
   </section>
 
-  <section style="margin-bottom: 3rem;">
-    <h2 style="margin-bottom: 1rem;">More</h2>
+  <section class="m2g-section">
+    <h2 class="m2g-section-title">More</h2>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
-
-      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+    <div class="m2g-grid m2g-grid-3-small">
+      <div class="m2g-card">
         <h3>About</h3>
         <p>Who we are and what Marks2Games is building.</p>
-        <p><a href="{{ "page/about/" | relURL }}">About Marks2Games</a></p>
+        <div class="m2g-card-links">
+          <a href="{{ "page/about/" | relURL }}">About Marks2Games</a>
+        </div>
       </div>
 
-      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+      <div class="m2g-card">
         <h3>Support</h3>
         <p>Support our work through Buy Me a Coffee and help fund future development.</p>
-        <p><a href="{{ "page/support/" | relURL }}">Support development</a></p>
+        <div class="m2g-card-links">
+          <a href="{{ "page/support/" | relURL }}">Support development</a>
+        </div>
       </div>
 
-      <div style="border: 1px solid #444; border-radius: 12px; padding: 1.25rem;">
+      <div class="m2g-card">
         <h3>Contact</h3>
         <p>Get in touch for questions, feedback, partnerships, or community links.</p>
-        <p><a href="{{ "page/contact/" | relURL }}">Contact us</a></p>
+        <div class="m2g-card-links">
+          <a href="{{ "page/contact/" | relURL }}">Contact us</a>
+        </div>
       </div>
-
     </div>
   </section>
 
-  <section style="padding-top: 1rem; border-top: 1px solid #444;">
-    <p>
-      <a href="{{ "page/terms-of-service/" | relURL }}">Terms of Service</a> |
-      <a href="{{ "page/privacy-policy/" | relURL }}">Privacy Policy</a>
-    </p>
+  <section class="m2g-footer-links">
+    <a href="{{ "page/terms-of-service/" | relURL }}">Terms of Service</a>
+    <a href="{{ "page/privacy-policy/" | relURL }}">Privacy Policy</a>
   </section>
 
 </div>
