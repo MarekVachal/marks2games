@@ -2,6 +2,7 @@ baseURL = 'https://marekvachal.github.io/marks2games/'
 languageCode = 'en-us'
 title = 'Marks2Games'
 theme = 'stack'
+services.googleAnalytics.ID = 'G-4SYS3H7G64'
 
 [[menu.main]]
 identifier = "about"
