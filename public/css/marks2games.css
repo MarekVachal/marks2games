@@ -411,3 +411,35 @@ a:hover {
   transform: translateY(-4px);
   box-shadow: 0 16px 40px rgba(0,0,0,0.35);
 }
+
+.m2g-newsletter {
+  background: linear-gradient(180deg, rgba(36,42,52,0.95) 0%, rgba(26,30,38,0.96) 100%);
+  border: 1px solid var(--m2g-border);
+  border-radius: var(--m2g-radius);
+  padding: 2rem;
+  margin-top: 3rem;
+  box-shadow: var(--m2g-shadow);
+}
+
+.m2g-newsletter-form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.m2g-newsletter-input {
+  flex: 1;
+  min-width: 240px;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--m2g-border);
+  background: var(--m2g-surface);
+  color: var(--m2g-text);
+}
+
+.m2g-newsletter-note {
+  margin-top: 1rem;
+  font-size: 0.92rem;
+  color: var(--m2g-text-soft);
+}
