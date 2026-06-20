@@ -11,12 +11,23 @@
 
     <div class="m2g-actions">
       <a class="m2g-button" href="https://buymeacoffee.com/gravitygame">Support</a>
+      <a class="m2g-button" href="mailto:gravitygame2024@gmail.com">Feedback via email</a>
+      <a class="m2g-button" href="https://discord.gg/H4hFa3vgvZ">Feedback via Discord</a>
     </div>
 
   <section class="m2g-section">
     <h2 class="m2g-section-title">Project Materials</h2>
     <div class="m2g-grid m2g-grid-3-small">
       {{ with .GetPage "rules.md" }}
+      <div class="m2g-card">
+        <h3>{{ .Title }}</h3>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        <div class="m2g-card-links"><a href="{{ .RelPermalink }}">Open page</a></div>
+      </div>
+      {{ end }}
+    
+    
+      {{ with .GetPage "print&play.md" }}
       <div class="m2g-card">
         <h3>{{ .Title }}</h3>
         {{ with .Description }}<p>{{ . }}</p>{{ end }}
@@ -37,6 +48,9 @@
       <p>
         <a href="{{ "downloads/gladiators/gladiators-rules.pdf" | relURL }}">Rules (PDF)</a>
       </p>
+      <p>
+        <a href="{{ "downloads/gladiators/gladiators-print&play.pdf" | relURL }}">Print & Play (PDF)</a>
+      </p>    
     </div>
   </section>
 

@@ -109,4 +109,5 @@ The game already has a functional playable core, but the rules and presentation 
 
 Return to the main project page here:
 
-[Gladiators](../)
+- [Gladiators](../)
+- [Print&Play](../print&play/)

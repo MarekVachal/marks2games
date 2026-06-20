@@ -116,11 +116,14 @@ Gladiators is currently being developed as a standalone tabletop game project.
 
 The game already has a working playable core, and the long-term ambition is to develop it into a polished release suitable for a future **Kickstarter campaign**.
 
+You can download Rules and cards to play, besides that you will need 6-sided dice. Play and send us feedback on our [discort](https://discord.gg/H4hFa3vgvZ) or [email](mailto:gravitygame2024@gmail.com)
+
 ---
 
 ## Learn more
 
 - [Rules](../gladiators/rules/)
+- [Print & Play](../gladiators/printplay/)
 
 More materials may be added over time as the project develops.
 
