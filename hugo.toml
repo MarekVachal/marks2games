@@ -1,4 +1,4 @@
-baseURL = 'https://marekvachal.github.io/marks2games/'
+baseURL = 'https://marks2games.com/'
 languageCode = 'en-us'
 title = 'Marks2Games'
 theme = 'stack'
