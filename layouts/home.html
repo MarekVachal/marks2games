@@ -73,6 +73,22 @@
     </div>
   </section>
 
+  <section class="m2g-section" aria-labelledby="news-heading">
+    <div class="m2g-news-heading">
+      <h2 class="m2g-section-title" id="news-heading">News & Media</h2>
+      <a class="m2g-button" href="{{ "news/" | relURL }}">All news & media →</a>
+    </div>
+    <p class="m2g-subtitle m2g-news-intro">Studio updates, development stories, interviews and videos.</p>
+    {{ $news := first 3 (where .Site.RegularPages "Section" "news").ByDate.Reverse }}
+    {{ if $news }}
+    <div class="m2g-grid m2g-news-grid{{ if eq (len $news) 1 }} m2g-news-grid-single{{ end }}">
+      {{ range $news }}{{ partial "news/card.html" . }}{{ end }}
+    </div>
+    {{ else }}
+    <div class="m2g-card m2g-news-empty"><p>New stories are on the way. Subscribe below for updates from Marks2Games.</p></div>
+    {{ end }}
+  </section>
+
   <section class="m2g-section">
     <h2 class="m2g-section-title">More</h2>
 

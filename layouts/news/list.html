@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="m2g-wrap">
+  <section class="m2g-hero">
+    <div class="m2g-eyebrow">From the studio & around the web</div>
+    <h1 class="m2g-title">{{ .Title }}</h1>
+    <p class="m2g-subtitle">{{ .Description }}</p>
+  </section>
+  {{ with .Content }}<div class="m2g-prose">{{ . }}</div>{{ end }}
+  <section class="m2g-section" aria-label="News and media entries">
+    {{ $paginator := .Paginate (.RegularPages.ByDate.Reverse) }}
+    {{ if $paginator.Pages }}
+    <div class="m2g-grid m2g-news-grid">
+      {{ range $paginator.Pages }}{{ partial "news/card.html" . }}{{ end }}
+    </div>
+    {{ if gt $paginator.TotalPages 1 }}
+    <nav class="m2g-actions" aria-label="News pagination">
+      {{ if $paginator.HasPrev }}<a class="m2g-button" href="{{ $paginator.Prev.URL }}">Newer posts</a>{{ end }}
+      <span class="m2g-news-page">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+      {{ if $paginator.HasNext }}<a class="m2g-button" href="{{ $paginator.Next.URL }}">Older posts</a>{{ end }}
+    </nav>
+    {{ end }}
+    {{ else }}
+    <div class="m2g-card m2g-news-empty"><h2>Stories from Marks2Games</h2><p>Studio updates, articles and videos will appear here. Subscribe below to hear about new posts.</p></div>
+    {{ end }}
+  </section>
+  <div class="m2g-actions"><a class="m2g-button" href="{{ relURL "#stay-updated" }}">Subscribe to updates</a></div>
+</div>
+{{ end }}

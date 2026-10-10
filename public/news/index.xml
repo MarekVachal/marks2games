@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>News &amp; Media on Marks2Games</title>
+        <link>http://localhost:1313/news/</link>
+        <description>Recent content in News &amp; Media on Marks2Games</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 10 Oct 2026 12:00:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>Marks2Games meets Jindřich Cestovatel</title>
+            <link>http://localhost:1313/news/first-interview/</link>
+            <pubDate>Sat, 10 Oct 2026 12:00:00 +0200</pubDate>
+            <guid>http://localhost:1313/news/first-interview/</guid>
+            <description>&lt;p&gt;Our good friend Jindřich, the creator behind the travel channel &lt;strong&gt;Jindřich Cestovatel&lt;/strong&gt;, filmed a short interview with us.&lt;/p&gt;&#xA;&lt;p&gt;We’re happy to share it with you — watch the interview on YouTube and explore his channel for more travel videos.&lt;/p&gt;&#xA;</description>
+        </item></channel>
+</rss>

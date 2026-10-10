@@ -1,0 +1,23 @@
+{{ $url := .RelPermalink }}
+{{ $external := false }}
+{{ with .Params.external_url }}
+  {{ if or (hasPrefix . "https://") (hasPrefix . "http://") }}
+    {{ $url = . }}{{ $external = true }}
+  {{ else }}{{ errorf "News entry %s: external_url must start with https:// or http://" $.File.Path }}{{ end }}
+{{ end }}
+{{ $image := .Params.thumbnail | default .Params.image }}
+<article class="m2g-card m2g-news-card{{ with $image }} m2g-news-card-with-image{{ end }}">
+  {{ with $image }}
+  <div class="m2g-news-thumbnail">
+    <img class="m2g-news-image" src="{{ . | relURL }}" alt="{{ $.Params.image_alt | default $.Title }}" loading="lazy" width="640" height="360">
+  </div>
+  {{ end }}
+  <div class="m2g-news-card-content">
+    {{ partial "news/meta.html" . }}
+    <h3>{{ .Title }}</h3>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    <div class="m2g-card-links">
+      <a class="m2g-button" href="{{ $url }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Params.link_label | default (cond $external "View original" "Read article") }}{{ if $external }}<span class="m2g-sr-only"> (opens in a new tab)</span>{{ end }}</a>
+    </div>
+  </div>
+</article>

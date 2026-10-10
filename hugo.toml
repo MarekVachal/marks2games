@@ -29,6 +29,12 @@ url = "/gladiators/"
 weight = 40
 
 [[menu.main]]
+identifier = "news"
+name = "News & Media"
+url = "/news/"
+weight = 45
+
+[[menu.main]]
 identifier = "support"
 name = "Support"
 url = "/page/support/"

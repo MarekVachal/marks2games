@@ -443,3 +443,42 @@ a:hover {
   font-size: 0.92rem;
   color: var(--m2g-text-soft);
 }
+
+/* News & Media: inherits the existing Marks2Games palette. */
+.m2g-news-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
+.m2g-news-heading .m2g-section-title { margin: 0; }
+.m2g-news-intro { margin: 1rem 0 1.5rem; }
+.m2g-news-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.m2g-news-grid-single { grid-template-columns: minmax(0, 1fr); }
+.m2g-news-card { min-width: 0; display: flex; flex-direction: column; }
+.m2g-news-card h3 { line-height: 1.35; overflow-wrap: anywhere; }
+.m2g-news-card .m2g-card-links { margin-top: auto; padding-top: 1rem; }
+.m2g-news-thumbnail { margin-bottom: 1rem; }
+.m2g-news-image { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; display: block; border-radius: var(--m2g-radius-sm); }
+.m2g-news-meta { display: flex; flex-wrap: wrap; align-items: center; gap: .55rem .8rem; color: var(--m2g-text-soft); font-size: .9rem; margin-bottom: 1rem; }
+.m2g-news-badge { color: var(--m2g-accent-soft); border: 1px solid var(--m2g-border); border-radius: 999px; padding: .25rem .65rem; }
+.m2g-news-cover { max-width: 850px; height: auto; margin-bottom: 2rem; }
+.m2g-news-empty p { margin: 0; }
+.m2g-news-page { align-self: center; color: var(--m2g-text-soft); }
+.m2g-wrap a:focus-visible { outline: 2px solid var(--m2g-accent-soft); outline-offset: 4px; }
+.m2g-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .m2g-news-card { transition: none; }
+  .m2g-news-card:hover { transform: none; }
+}
+
+/* A single homepage entry stays compact, with a thumbnail beside its text. */
+.m2g-news-card-content { min-width: 0; display: flex; flex-direction: column; flex: 1; }
+.m2g-news-card h3 { color: var(--m2g-text); margin: 0 0 .4rem; }
+.m2g-news-card-content > p { margin: .2rem 0 .6rem; }
+.m2g-news-card .m2g-button { padding: .55rem .9rem; margin: 0; }
+.m2g-news-grid-single .m2g-news-card-with-image {
+  display: grid; grid-template-columns: 220px minmax(0, 1fr); align-items: center; gap: 1.3rem; padding: 1rem;
+}
+.m2g-news-grid-single .m2g-news-thumbnail { margin: 0; }
+.m2g-news-grid-single .m2g-news-meta { margin-bottom: .55rem; }
+.m2g-news-grid-single .m2g-card-links { margin-top: .25rem; padding-top: .25rem; }
+@media (max-width: 600px) {
+  .m2g-news-grid-single .m2g-news-card-with-image { grid-template-columns: 1fr; }
+  .m2g-news-grid-single .m2g-news-thumbnail { max-width: 320px; }
+}

@@ -1,0 +1,6 @@
+<div class="m2g-news-meta">
+  <span class="m2g-news-badge">{{ .Params.category | default "News" }}</span>
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+  {{ with .Params.project }}<span>{{ . }}</span>{{ end }}
+  {{ with .Params.source }}<span>{{ . }}</span>{{ else }}{{ with .Params.author }}<span>{{ . }}</span>{{ end }}{{ end }}
+</div>

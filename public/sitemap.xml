@@ -2,54 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/marks2games/gravity-game/faq/</loc>
+    <loc>http://localhost:1313/gravity-game/faq/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/page/about/</loc>
+    <loc>http://localhost:1313/news/first-interview/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/insect-steampunk/archetypes/</loc>
+    <loc>http://localhost:1313/page/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/gravity-game/battles/</loc>
+    <loc>http://localhost:1313/insect-steampunk/archetypes/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/insect-steampunk/bestiary/</loc>
+    <loc>http://localhost:1313/gravity-game/battles/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/categories/</loc>
+    <loc>http://localhost:1313/insect-steampunk/bestiary/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/page/contact/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/gravity-game/districts/</loc>
+    <loc>http://localhost:1313/page/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/gladiators/</loc>
+    <loc>http://localhost:1313/gravity-game/districts/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/gravity-game/</loc>
+    <loc>http://localhost:1313/gladiators/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/insect-steampunk/</loc>
+    <loc>http://localhost:1313/gravity-game/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/insect-steampunk/maps/</loc>
+    <loc>http://localhost:1313/insect-steampunk/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/</loc>
+    <loc>http://localhost:1313/insect-steampunk/maps/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/page/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/gravity-game/planets/</loc>
+    <loc>http://localhost:1313/news/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/gladiators/printplay/</loc>
+    <loc>http://localhost:1313/page/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/page/privacy-policy/</loc>
+    <loc>http://localhost:1313/gravity-game/planets/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/gravity-game/production/</loc>
+    <loc>http://localhost:1313/gladiators/printplay/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/gravity-game/resources/</loc>
+    <loc>http://localhost:1313/page/privacy-policy/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/gladiators/rules/</loc>
+    <loc>http://localhost:1313/gravity-game/production/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/insect-steampunk/rules/</loc>
+    <loc>http://localhost:1313/gravity-game/resources/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/page/support/</loc>
+    <loc>http://localhost:1313/gladiators/rules/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/tags/</loc>
+    <loc>http://localhost:1313/insect-steampunk/rules/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/gravity-game/technologies/</loc>
+    <loc>http://localhost:1313/page/support/</loc>
   </url><url>
-    <loc>http://localhost:1313/marks2games/page/terms-of-service/</loc>
+    <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/gravity-game/technologies/</loc>
+  </url><url>
+    <loc>http://localhost:1313/page/terms-of-service/</loc>
   </url>
 </urlset>
