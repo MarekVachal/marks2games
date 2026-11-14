@@ -1,0 +1,5 @@
+# Hugo generated website
+/public/
+
+# Hugo generated resources
+/resources/_gen/

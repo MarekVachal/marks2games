@@ -1,0 +1,9 @@
+cd marks2games
+hugo server
+
+http://localhost:1313/
+
+aktualizace webu:
+git add .
+git commit -m "název změn"
+git push

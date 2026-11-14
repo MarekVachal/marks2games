@@ -1,5 +1,5 @@
 baseURL = 'https://marks2games.com/'
-languageCode = 'en-us'
+languageCode = 'en-US'
 title = 'Marks2Games'
 theme = 'stack'
 services.googleAnalytics.ID = 'G-4SYS3H7G64'
@@ -73,3 +73,6 @@ name = "Buy Me a Coffee"
 url = "https://buymeacoffee.com/gravitygame"
 weight = 40
 params.icon = "coffee"
+
+[markup.goldmark.renderer]
+unsafe = true
