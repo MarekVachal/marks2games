@@ -1,0 +1,64 @@
+{{- if not site.Config.Privacy.GoogleAnalytics.Disable -}}
+  {{- with site.Config.Services.GoogleAnalytics.ID -}}
+    <script>
+      (function () {
+        var gaId = {{ . }};
+        var loaded = false;
+
+        function removeAnalyticsCookies() {
+          var names = document.cookie.split(';').map(function (part) {
+            return part.trim().split('=')[0];
+          }).filter(function (name) {
+            return /^_ga($|_)|^_gid$|^_gat($|_)/.test(name);
+          });
+          var host = location.hostname;
+          var domains = ['', host, '.' + host];
+          var parts = host.split('.');
+          if (parts.length > 2) domains.push('.' + parts.slice(-2).join('.'));
+
+          names.forEach(function (name) {
+            domains.forEach(function (domain) {
+              document.cookie = name + '=; Max-Age=0; path=/; SameSite=Lax' + (domain ? '; domain=' + domain : '');
+            });
+          });
+        }
+
+        function loadAnalytics() {
+          if (loaded) return;
+          loaded = true;
+
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function () { window.dataLayer.push(arguments); };
+          window.gtag('consent', 'default', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: 'granted'
+          });
+          window.gtag('js', new Date());
+          window.gtag('config', gaId, {
+            cookie_expires: 31536000,
+            allow_google_signals: false,
+            allow_ad_personalization_signals: false
+          });
+
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(gaId);
+          document.head.appendChild(script);
+        }
+
+        window.addEventListener('onCookieConsentChange', function (event) {
+          if (event.detail && event.detail.analytics) {
+            loadAnalytics();
+          } else if (loaded) {
+            window['ga-disable-' + gaId] = true;
+            window.gtag('consent', 'update', { analytics_storage: 'denied' });
+            removeAnalyticsCookies();
+            location.reload();
+          }
+        });
+      })();
+    </script>
+  {{- end -}}
+{{- end -}}

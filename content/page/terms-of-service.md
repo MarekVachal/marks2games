@@ -138,4 +138,4 @@ The current version will always be published on this page. Continued use of the 
 
 If you have any questions about these Terms, you can contact us at:
 
-**Email:** [gravitygame2024@gmail.com](mailto:gravitygame2024@gmail.com)
+**Email:** [contact@marks2games.com](mailto:contact@marks2games.com)

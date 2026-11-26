@@ -1,8 +1,16 @@
 baseURL = 'https://marks2games.com/'
-languageCode = 'en-US'
+locale = 'en-US'
 title = 'Marks2Games'
 theme = 'stack'
 services.googleAnalytics.ID = 'G-4SYS3H7G64'
+
+[params.cookies]
+enabled = true
+showSettings = true
+
+[params.cookies.categories]
+analytics = true
+functional = false
 
 [[menu.main]]
 identifier = "about"
@@ -49,7 +57,7 @@ weight = 60
 [[menu.social]]
 identifier = "email"
 name = "Email"
-url = "gravitygame2024@gmail.com"
+url = "mailto:contact@marks2games.com"
 weight = 10
 params.icon = "mail"
 

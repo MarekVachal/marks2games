@@ -1,0 +1,31 @@
+<div id="cookie-consent-banner" class="cookie-banner" aria-hidden="true" role="dialog" aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-description">
+  <div class="cookie-banner__content">
+    <div class="cookie-banner__text">
+      <strong id="cookie-banner-title">Your cookie choices</strong>
+      <p id="cookie-banner-description">We use necessary cookies to remember your choice. With your permission, Google Analytics cookies help us measure visits. You can reject them and still use the site. <a href="{{ "page/privacy-policy/" | relURL }}">Privacy and cookie details</a>.</p>
+    </div>
+
+    <div class="cookie-banner__actions">
+      <button type="button" class="cookie-btn cookie-btn--secondary" data-cookie-action="deny">Reject analytics</button>
+      <button type="button" class="cookie-btn cookie-btn--secondary" data-cookie-action="accept">Accept analytics</button>
+    </div>
+
+    <button type="button" class="cookie-banner__settings-link" data-cookie-action="settings">Choose cookies</button>
+
+    <div id="cookie-settings-panel" class="cookie-settings" aria-hidden="true">
+      <h3>Cookie preferences</h3>
+      <div class="cookie-category">
+        <label><input type="checkbox" checked disabled> <strong>Necessary</strong></label>
+        <p>Stores your cookie choice for up to one year.</p>
+      </div>
+      <div class="cookie-category">
+        <label><input type="checkbox" data-cookie-category="analytics"> <strong>Analytics</strong></label>
+        <p>Google Analytics measures visits and usage. It is off until you opt in.</p>
+      </div>
+      <div class="cookie-settings__actions">
+        <button type="button" class="cookie-btn cookie-btn--secondary" data-cookie-action="cancel">Cancel</button>
+        <button type="button" class="cookie-btn cookie-btn--secondary" data-cookie-action="save">Save choice</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -27,6 +27,6 @@ If you want to move from being a user to being a creator, the key lies in unders
 
 My journey into fantasy and games began when I was six years old and discovered the magic of **Dungeons & Dragons** with my father. Since then, tabletop RPGs and board games have remained a part of my life, and I continue to play them to this day. Computer games, especially simulation and strategy games, also became one of my main hobbies.
 
-As a teenager, I encountered Indian philosophy, which immediately captivated me and strongly influenced my intellectual path. After finishing high school in bookselling, I continued my studies at the Faculty of Arts, where I specialized in Indian traditions at the Department of Religious Studies.
+As a teenager, I encountered Indian philosophy, which immediately captivated me and strongly influenced my intellectual path. Later I decided to continue my studies at the Department of Religious Studies, where I specialized in Indian traditions.
 
 Ironically, studying this distant culture led me back toward a deeper exploration of Western culture. Along the way, I came to a profound realization: the world of fantasy today is still shaped primarily by Western imagination, even though fantasy itself can be far more imaginative than most people ever expect.

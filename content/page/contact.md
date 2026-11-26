@@ -13,7 +13,7 @@ We welcome feedback, questions, collaboration ideas, and community messages.
 
 For general questions about our games, development, or future plans, please contact us at:
 
-**Email:** gravitygame2024@gmail.com
+**Email:** [contact@marks2games.com](mailto:contact@marks2games.com)
 
 ## Community
 

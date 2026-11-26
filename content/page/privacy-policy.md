@@ -5,7 +5,7 @@ description: "Privacy Policy for Marks2Games and its projects."
 
 ## Privacy Policy
 
-**Last updated: 28 March 2026**
+**Last updated: 26 November 2026**
 
 This Privacy Policy explains how **Marks2Games** ("we", "our", or "us") collects, uses, and protects information when you use our website, games, and related services.
 
@@ -19,7 +19,7 @@ Marks2Games is an independent game project and development brand operated by its
 
 If you have any questions about this Privacy Policy, you can contact us at:
 
-**Email:** [gravitygame2024@gmail.com](mailto:gravitygame2024@gmail.com)
+**Email:** [contact@marks2games.com](mailto:contact@marks2games.com)
 
 ---
 
@@ -86,8 +86,20 @@ These may include:
 - **Firebase (Google LLC)** – for authentication, cloud storage, and backend services
 - **Google Play Services** – for sign-in and Android platform-related services
 - **Sentry** – for crash reporting, diagnostics, and technical monitoring
+- **Buttondown** – email newsletters and subscription management
+- **Google Analytics** – website traffic analytics
 
 These providers may process limited data as necessary for their services to function.
+
+### Website cookies and Google Analytics
+
+Our website stores a necessary `cookie_consent` cookie to remember whether you accepted or rejected analytics cookies. It contains your choice and its timestamp, expires after 365 days, and is used only to manage your preference. You can use the website without accepting analytics cookies.
+
+We load Google Analytics 4 (provided by Google) only after you actively accept analytics cookies. We use it to understand visits and how people use the website. Analytics may then set first-party cookies such as `_ga` (to distinguish visitors) and `_ga_<ID>` (to maintain session state). We configure these cookies to expire after up to one year. Google may also process usage and device information as part of the analytics service. The legal basis for storing and reading analytics cookies and processing the resulting analytics data is your consent. We have disabled Google's advertising signals and ad personalization in the website tag.
+
+You can reject analytics in the cookie banner, change your choice using **Cookie settings**, or immediately withdraw it using **Withdraw analytics consent** at the bottom of any page. Withdrawal stops further Google Analytics collection on this website and removes accessible Analytics cookies; it does not undo processing that took place before withdrawal. If you do not make a choice, Google Analytics remains off.
+
+For more information about Google's processing, retention and possible international data transfers, see [Google's privacy information](https://policies.google.com/privacy) and [Google Analytics cookie details](https://support.google.com/analytics/answer/11397207). For questions or requests concerning your data, contact us at [contact@marks2games.com](mailto:contact@marks2games.com). You can also lodge a complaint with the [Czech Data Protection Authority](https://uoou.gov.cz/).
 
 We do not sell your personal data to third parties.
 
@@ -113,7 +125,7 @@ If you wish to delete your account and associated data for **Gravity Game**, you
 - by contacting us via email
 
 **Contact for deletion requests:**  
-[gravitygame2024@gmail.com](mailto:gravitygame2024@gmail.com)
+[contact@marks2games.com](mailto:contact@marks2games.com)
 
 We will make reasonable efforts to process deletion requests in an appropriate timeframe.
 
@@ -153,4 +165,4 @@ The most current version will always be published on this page.
 
 If you have any questions about this Privacy Policy or how your data is handled, please contact us:
 
-**Email:** [gravitygame2024@gmail.com](mailto:gravitygame2024@gmail.com)
+**Email:** [contact@marks2games.com](mailto:contact@marks2games.com)
